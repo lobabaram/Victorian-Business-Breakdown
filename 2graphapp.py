@@ -38,6 +38,7 @@ with open('index.json', 'r') as json_file:
 app = dash.Dash(__name__,
                 external_stylesheets=[dbc.themes.SUPERHERO],
                 )
+server = app.server
 
 # Define the layout of the app
 app.layout = html.Div([
